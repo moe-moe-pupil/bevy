@@ -774,7 +774,7 @@ pub fn pointer_events(
                                 DragOver {
                                     button,
                                     dragged: *drag_target,
-                                    hit: hit.clone(),
+                                    hit,
                                 },
                                 hovered_entity,
                             );
@@ -794,7 +794,7 @@ pub fn pointer_events(
                         pointer_id,
                         location.clone(),
                         Move {
-                            hit: hit.clone(),
+                            hit,
                             delta,
                         },
                         hovered_entity,
